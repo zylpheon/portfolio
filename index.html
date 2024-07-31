@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tino Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Zylpheon</a>
+      <i class="fa-solid fa-bars" class="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="pfp.jpg" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Tino</span></h1>
+        <h3>
+          <div class="wrapper">I'm a <span id="text"></span></div>
+        </h3>
+        <p>
+          Hello, welcome to my personal website. I'm Tino, a web developer and a student. I'm still learning, and this website is one of my projects. I hope you like my website. If you have any suggestions or want to contact me, feel free
+          to get in touch. Thank you for visiting my web!
+        </p>
+        <div class="social-icon">
+          <a href="https://www.instagram.com/zylpheon2008/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/ValentinoLR3"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/valentino.rinumpoko"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/Orsen-hauser"><i class="fa-brands fa-github"></i></a>
+          <a href="https://discordapp.com/users/964725233741365309"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <a href="#" class="btn">Coming Soon</a>
+      </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+      <div class="aboutme-box">
+        <div class="aboutme-info">
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is Valentino, and I am a student at Depok 2 Vocational High School in Yogjakarta, Indonesia. I am currently in class XI and specializing in the field of technology, which I am very interested in. This passion led me to choose my major, where I've been learning and developing skills. Apart from studies, I also enjoy photography. Capturing moments and exploring different perspectives through the lens of my camera allows me to express my creativity and see the world in unique ways.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h4 class="heading">Skills</h4>
+      <div class="container">
+          <div class="bar">
+            <div class="info">
+              <img src="html.png" />
+              <span>HTML5</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="css.png" />
+              <span>CSS3</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="javascript.png" />
+              <span>Javascript</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="python.png" />
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="c++.png" />
+              <span>C++</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="figma.png" />
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/zylpheon2008/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/ValentinoLR3"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/valentino.rinumpoko"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/Orsen-hauser"><i class="fa-brands fa-github"></i></a>
+        <a href="https://discordapp.com/users/964725233741365309"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <ul class="list">
+        <li><a href="#">Go Back?</a></li>
+      </ul>
+      <p class="copyright">
+        © Zylpheon | All Right Reserved
+      </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed("#text", {
+      strings: ["student", "programmer", "developer", "photographer"],
+      loop: true,
+      typeSpeed: 125,
+      backSpeed: 50,
+      startDelay: 1000,
+      backDelay: 1500,
+      });
+    </script>
+  </body>
+</html>
