@@ -37,7 +37,9 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
-
+.header .nav-bar .logo img {
+  width: 50px;
+}
 .nav-bar {
   width: 100%;
   display: flex;
