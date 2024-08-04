@@ -9,13 +9,19 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Zylpheon</a>
-      <i class="fa-solid fa-bars" class="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#services">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact Me</a>
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'><img src='logo.png'/></a></li>
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="#home">Home</a></li> 
+                  <li><a href="#aboutme">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          </ul>
       </nav>
     </header>
     <section class="home" id="home">
