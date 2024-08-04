@@ -151,9 +151,6 @@ html::-webkit-scrollbar-thumb {
     font-weight: 900;
     padding-right: 20px;
   }
-  .open-menu .fas::after {
-    display: none;
-  }
 }
 
 section {
