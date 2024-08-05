@@ -53,6 +53,14 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   width: 100%;
 }
+@media (max-width: 320px) {
+  .header .nav-bar {
+    padding: 10px 10px;
+  }
+  .header .nav-bar .logo img {
+    width: 20px;
+  }
+}
 .logo {
   color: var(--main-color);
   font-weight: 800;
@@ -152,6 +160,16 @@ html::-webkit-scrollbar-thumb {
     padding-right: 20px;
   }
 }
+@media (max-width: 320px) {
+  .open-menu,
+  .close-menu {
+    font-size: 1.5rem;
+  }
+  .close-menu {
+    top: 14px;
+    right: 30px;
+  }
+}
 
 section {
   min-height: 100vh;
@@ -236,6 +254,35 @@ span {
   transform: scale(1.3) tranlateY(-5px);
   background: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
+}
+@media (max-width: 320px) {
+  .home-img {
+    height: 50vw;
+  }
+  .home-img img {
+    width: 40vw;
+  }
+  section#home.home {
+    min-height: 100vh;
+    padding: 4rem 0.1% 3rem 0rem;
+  }
+  .home .home-content h1 {
+    font-size: 4.5rem;
+  }
+  .home .home-content h3 {
+    font-size: 2.3rem;
+  }
+  .home-content p {
+    font-size: 1.1rem;
+    padding-right: 14px;
+    text-align: justify;
+  }
+  .social-icon a {
+    margin: 2.5rem 1.4rem 2.5rem 0;
+  }
+  .fa-brands {
+    line-height: 0.5;
+  }
 }
 .btn {
   display: inline-block;
@@ -373,6 +420,27 @@ span {
     height: 490px;
   }
 }
+@media (max-width: 320px) {
+  .aboutme {
+    padding-top: 10rem;
+  }
+  .aboutme-info h2 {
+    font-size: 2.5rem;
+  }
+  .aboutme-info p {
+    font-size: 1.44rem;
+  }
+  .aboutme-box {
+    height: 415px;
+    margin-top: 1rem;
+  }
+  section#aboutme.aboutme {
+    padding-top: 5rem;
+  }
+  div.aboutme-box .aboutme-info {
+    padding: 2.5rem 3rem 6rem;
+  }
+}
 
 .skills {
   background: var(--bg-color);
@@ -438,6 +506,24 @@ span {
     margin-right: 30px;
   }
 }
+@media (max-width: 320px) {
+  .info img {
+    width: 5rem;
+  }
+  .skills .container .bar {
+    padding: 0;
+  }
+  .skills .container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  section#skills.skills {
+    padding: 0.01rem 3% 2rem;
+  }
+  .skills .container .bar .info span {
+    font-size: 1.5rem;
+  }
+}
 
 .contact {
   background-color: var(--second-bg-color);
@@ -478,6 +564,27 @@ span {
     margin-right: 30px;
   }
 }
+@media (max-width: 320px) {
+  section#contact.contact {
+    padding: 0.01rem 3% 2rem;
+  }
+  h2.heading {
+    margin-top: 4rem;
+    font-size: 4rem;
+  }
+  .contact h2 {
+    margin-bottom: 0.01rem;
+  }
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .contact form .btn {
+    margin-top: 1rem;
+  }
+}
 
 .footer {
   position: relative;
@@ -516,23 +623,31 @@ span {
   margin-bottom: 0;
   text-align: center;
 }
-.footer ul li a {
-  color: black;
-  border-bottom: 3px solid transparent;
-  transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover {
-  border-bottom: 3px solid black;
-}
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
 .footer .copyright {
-  margin-top: 10px;
+  margin-top: 0.01px;
   text-align: center;
   font-size: 16px;
   color: black;
+}
+@media (max-width: 320px) {
+  .footer .social a {
+    font-size: 20px;
+    width: 37px;
+    height: 36px;
+    justify-items: center;
+    text-align: center;
+    margin: 0 5px;
+  }
+  .footer .social {
+    padding-bottom: 15px;
+  }
+  .footer ul li a {
+    font-size: 15px;
+  }
+  .footer .copyright {
+    margin-top: 6px;
+    font-size: 13px;
+  }
 }
 @media (max-width: 1285px) {
   html {
