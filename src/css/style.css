@@ -154,6 +154,7 @@ html::-webkit-scrollbar-thumb {
   }
   #check:checked ~ .menu {
     right: 0;
+    backdrop-filter: blur(4px);
   }
   .open-menu .fas {
     font-weight: 900;
@@ -648,6 +649,9 @@ span {
     margin-top: 6px;
     font-size: 13px;
   }
+  .open-menu .fas {
+    padding-right: 10px;
+  }
 }
 @media (max-width: 1285px) {
   html {
@@ -661,7 +665,7 @@ span {
 }
 @media (max-width: 991px) {
   .header {
-    padding: 2rem 3%;
+    padding: 2rem 0;
   }
   .section {
     padding: 10rem 3% 2rem;
