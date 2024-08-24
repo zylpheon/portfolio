@@ -53,12 +53,28 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   width: 100%;
 }
+@media (max-width: 425px) {
+  .header .nav-bar {
+    padding: 10px 10px;
+  }
+  .header .nav-bar .logo img {
+    width: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header .nav-bar {
+    padding: 10px 10px;
+  }
+  .header .nav-bar .logo img {
+    width: 35px;
+  }
+}
 @media (max-width: 320px) {
   .header .nav-bar {
     padding: 10px 10px;
   }
   .header .nav-bar .logo img {
-    width: 20px;
+    width: 30px;
   }
 }
 .logo {
@@ -161,17 +177,36 @@ html::-webkit-scrollbar-thumb {
     padding-right: 20px;
   }
 }
+@media (max-width: 425px) {
+  .open-menu,
+  .close-menu {
+    font-size: 1.5rem;
+  }
+  .close-menu {
+    top: 24px;
+    padding-right: 11px;
+  }
+}
+@media (max-width: 375px) {
+  .open-menu,
+  .close-menu {
+    font-size: 1.5rem;
+  }
+  .close-menu {
+    top: 21px;
+    padding-right: 10px;
+  }
+}
 @media (max-width: 320px) {
   .open-menu,
   .close-menu {
     font-size: 1.5rem;
   }
   .close-menu {
-    top: 14px;
-    right: 30px;
+    top: 19px;
+    padding-right: 0px;
   }
 }
-
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
@@ -261,16 +296,17 @@ span {
   background: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .home-img {
     height: 50vw;
   }
   .home-img img {
     width: 40vw;
+    margin-right: 35px;
   }
   section#home.home {
     min-height: 100vh;
-    padding: 4rem 0.1% 3rem 0rem;
+    padding: 4rem 0.1% 8rem 0rem;
   }
   .home .home-content h1 {
     font-size: 4.5rem;
@@ -497,7 +533,7 @@ span {
 }
 @media (max-width: 991px) {
   section {
-    padding: 10rem 3% 2rem;
+    padding: 1rem 3% 10rem;
   }
   .skills {
     padding-bottom: 7rem;
@@ -512,7 +548,7 @@ span {
     margin-right: 30px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .info img {
     width: 5rem;
   }
@@ -564,13 +600,11 @@ span {
 .contact form .btn {
   margin-top: 2rem;
 }
-@media (max-width: 430px) {
+@media (max-width: 425px) {
   .contact form {
     margin-left: 30px;
     margin-right: 30px;
   }
-}
-@media (max-width: 320px) {
   section#contact.contact {
     padding: 0.01rem 3% 2rem;
   }
@@ -635,7 +669,7 @@ span {
   font-size: 16px;
   color: black;
 }
-@media (max-width: 320px) {
+@media (max-width: 475px) {
   .footer .social a {
     font-size: 20px;
     width: 37px;
