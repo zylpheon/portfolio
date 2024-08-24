@@ -359,7 +359,7 @@ span {
 .heading {
   text-align: center;
   font-size: 6rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 .aboutme-container {
   align-items: center;
@@ -560,7 +560,8 @@ span {
     margin-right: 25px;
   }
   section#skills.skills {
-    padding: 0.01rem 3% 2rem;
+    padding: 0.01rem 3% 12%;
+    margin-top: 50px;
   }
   .skills .container .bar .info span {
     font-size: 1.5rem;
@@ -606,7 +607,7 @@ span {
     margin-right: 30px;
   }
   section#contact.contact {
-    padding: 0.01rem 3% 2rem;
+    padding: 10rem 3% 2rem;
   }
   h2.heading {
     margin-top: 4rem;
