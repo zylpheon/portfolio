@@ -184,7 +184,7 @@ html::-webkit-scrollbar-thumb {
   }
   .close-menu {
     top: 24px;
-    padding-right: 11px;
+    padding-right: 0;
   }
 }
 @media (max-width: 375px) {
@@ -194,7 +194,7 @@ html::-webkit-scrollbar-thumb {
   }
   .close-menu {
     top: 21px;
-    padding-right: 10px;
+    padding-right: 0px;
   }
 }
 @media (max-width: 320px) {
