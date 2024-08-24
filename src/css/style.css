@@ -645,8 +645,9 @@ span {
   border: 2px solid black;
   width: 42px;
   height: 42px;
-  display: inline-block;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   margin: 0 10px;
   transition: 0.3s ease-in-out;
@@ -675,8 +676,6 @@ span {
     font-size: 20px;
     width: 37px;
     height: 36px;
-    justify-items: center;
-    text-align: center;
     margin: 0 5px;
   }
   .footer .social {
