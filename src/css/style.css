@@ -442,7 +442,7 @@ span {
   margin: auto;
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .skills .container .bar {
