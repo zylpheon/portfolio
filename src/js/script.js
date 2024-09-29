@@ -1,26 +1,41 @@
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
-
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header nav ul li a");
-
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-
-    if ((top) => offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        document.querySelector("header nav ul li a[href*=" + id + "]").classList.add("active");
-      });
-    }
+document.querySelectorAll("nav ul li a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetID = this.getAttribute("href");
+    const targetSection = document.querySelector(targetID);
+    window.scrollTo({
+      top: targetSection.offsetTop - 50,
+      behavior: "smooth",
+    });
   });
-};
+});
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
-};
+const form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name) {
+    alert("Nama harus diisi.");
+    return;
+  }
+  if (!validateEmail(email)) {
+    alert("Masukkan email yang valid.");
+    return;
+  }
+  if (!message) {
+    alert("Pesan harus diisi.");
+    return;
+  }
+
+  alert("Terima kasih, pesan Anda telah terkirim!");
+  form.reset();
+});
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(String(email).toLowerCase());
+}
