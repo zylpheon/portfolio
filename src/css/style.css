@@ -429,7 +429,7 @@ span {
     padding-top: 5rem;
   }
   div.aboutme-box .aboutme-info {
-    padding: 2.5rem 3rem 6rem;
+    padding: 2rem 3rem 6rem;
   }
 }
 .skills {
@@ -711,6 +711,11 @@ span {
   }
   .projects .container-projects .bar-projects .info-projects a {
     font-size: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .projects .container-projects .bar-projects .info-projects img {
+    width: 45vh;
   }
 }
 .contact {
