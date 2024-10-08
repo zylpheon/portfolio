@@ -585,10 +585,12 @@ span {
   background-size: cover;
 }
 #slides .slide_3 {
-  background: #003459;
+  background-image: url("img/revou2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #slides .slide_4 {
-  background: #007ea7;
+  background: #003459;
 }
 #controls {
   margin: -180px 0 0 0;
@@ -698,9 +700,10 @@ span {
   color: var(--text-color);
   cursor: pointer;
   transition: ease-in-out 0.3s;
+  border-bottom: 4px solid transparent;
 }
 .projects .container-projects .bar-projects .info-projects a:hover {
-  transform: scale(1.1);
+  border-bottom: 4px solid var(--main-color);
 }
 @media (max-width: 430px) {
   .projects .container-projects .bar-projects .info-projects img {

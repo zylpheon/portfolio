@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="icon" type="image/x-icon" href="src/icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header class="header">
+    <header data-aos="fade-in" class="header">
       <nav>
           <ul class='nav-bar'>
               <li class='logo'><a href='#home'><img src='src/icon.png'/></a></li>
@@ -28,10 +29,10 @@
       </nav>
     </header>
     <section class="home" id="home">
-      <div class="home-img">
+      <div data-aos="fade-in" class="home-img">
         <img src="src/pfp.jpg" alt="" />
       </div>
-      <div class="home-content">
+      <div data-aos="fade-in" class="home-content">
         <h1>Hi, It's <span>Tino</span></h1>
         <h3>
           <div class="wrapper">I'm a <span id="text"></span></div>
@@ -51,7 +52,7 @@
       </div>
     </section>
     <section class="aboutme" id="aboutme">
-      <div class="aboutme-box">
+      <div data-aos="fade-down" class="aboutme-box">
         <div class="aboutme-info">
           <h2>About Me</h2>
           <p>
@@ -61,8 +62,8 @@
       </div>
     </section>
     <section class="skills" id="skills">
-      <h4 class="heading">Skills</h4>
-        <div class="container">
+      <h4 data-aos="fade-in" class="heading">Skills</h4>
+        <div data-aos="fade-down" class="container">
           <div class="bar">
             <div class="info">
               <img src="src/html.png" />
@@ -115,8 +116,8 @@
       </div>
     </section>
     <section class="certificates" id="certificates">
-      <h4 class="heading">Certificates</h4>
-      <div class="certificate">
+      <h4 data-aos="fade-in" class="heading">Certificates</h4>
+      <div data-aos="fade-down" class="certificate">
         <div id="slider">
           <input type="radio" name="slider" id="slide1" checked>
           <input type="radio" name="slider" id="slide2">
@@ -150,8 +151,8 @@
       </div>
     </section>
     <section class="projects" id="projects">
-      <h4 class="heading">Projects</h4>
-      <div class="container-projects">
+      <h4 data-aos="fade-in" class="heading">Projects</h4>
+      <div data-aos="fade-down" class="container-projects">
         <div class="bar-projects">
           <div class="info-projects">
             <img src="src/memory-card.jpg" />
@@ -161,8 +162,8 @@
       </div>
     </section>
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="">
+      <h2 data-aos="fade-in" class="heading">Contact <span>Me</span></h2>
+      <form data-aos="fade-in" action="">
         <div class="input-box">
           <input type="text" id="name" name="name" placeholder="Name" required>
           <input type="email" id="email" placeholder="Email" required>
@@ -196,5 +197,9 @@
       });
     </script>
     <script src="src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
